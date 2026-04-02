@@ -11,7 +11,7 @@ basic.showIcon(IconNames.Happy)
 // loop forever
 while (true) {
     // Read sensor (P1 is Trig, P2 is Echo)
-    let distance = sonar.ping(DigitalPin.P1, DigitalPin.P2, PingUnit.Centimeters)
+    const distance = sonar.ping(DigitalPin.P1, DigitalPin.P2, PingUnit.Centimeters)
 
     // If something is closer than 10cm
     if (distance > 0 && distance < 10) {
